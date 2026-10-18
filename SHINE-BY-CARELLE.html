@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SHINE BY CARELLE — Parfums, Mode &amp; Cosmétiques de luxe</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0a;--bg2:#141414;--card:#1e1e1e;--tx:#f8f8f8;--mut:#8e8e93;--g:#d4af37;--g2:#f3e5ab;--g3:#b59328;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#faf7f0;--bg2:#f2ecdc;--card:#fff;--tx:#17140c;--mut:#6b675c;--g:#a8851a}}
+:root[data-theme="light"]{--bg:#faf7f0;--bg2:#f2ecdc;--card:#fff;--tx:#17140c;--mut:#6b675c;--g:#a8851a}
+:root[data-theme="dark"]{--bg:#0a0a0a;--bg2:#141414;--card:#1e1e1e;--tx:#f8f8f8;--mut:#8e8e93;--g:#d4af37}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--tx);font:300 16px/1.6 Montserrat,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.1}
+.gold{background:linear-gradient(100deg,var(--g3),var(--g2),var(--g),var(--g2),var(--g3));background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shim 5s linear infinite}
+@keyframes shim{to{background-position:-250% 0}}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:calc(14px + env(safe-area-inset-top,0px)) 5vw 14px;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 70%,transparent)}
+nav b{letter-spacing:.3em;font-size:13px;font-weight:600}
+.btn{display:inline-block;padding:14px 30px;border-radius:99px;background:linear-gradient(120deg,var(--g3),var(--g),var(--g2));color:#0a0a0a;font-weight:600;font-size:13px;letter-spacing:.12em;text-decoration:none;text-transform:uppercase;transition:transform .3s,box-shadow .3s;box-shadow:0 0 0 0 #d4af3766;animation:pulse 2.6s infinite}
+.btn:hover{transform:translateY(-3px) scale(1.04)}
+.btn.sm{padding:9px 20px;font-size:11px;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 18px #d4af3700}}
+section{padding:100px 6vw;position:relative}
+.hero{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:120px;overflow:hidden}
+.hero h1{font-size:clamp(46px,7vw,92px);margin:14px 0 20px}
+.eyebrow{letter-spacing:.35em;font-size:11px;color:var(--g);text-transform:uppercase}
+.hero p{color:var(--mut);max-width:480px;margin-bottom:30px}
+.glow{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(#d4af3733,transparent 65%);right:-80px;top:10%;animation:float 9s ease-in-out infinite;pointer-events:none}
+.spark{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--g);opacity:0;animation:rise linear infinite;pointer-events:none}
+@keyframes rise{0%{transform:translateY(0) scale(.5);opacity:0}15%{opacity:.9}100%{transform:translateY(-95vh) scale(1.4);opacity:0}}
+@keyframes float{50%{transform:translateY(-22px)}}
+.phone{width:270px;height:560px;margin:auto;border-radius:42px;border:3px solid #2a2a2a;background:#0a0a0a;padding:12px;position:relative;box-shadow:0 40px 90px #d4af3733,0 0 0 1px #d4af3755;animation:float 6s ease-in-out infinite;color:#f8f8f8}
+.phone:before{content:"";position:absolute;top:10px;left:50%;width:70px;height:18px;margin-left:-35px;background:#000;border-radius:12px;z-index:3}
+.screens{position:relative;height:100%;border-radius:30px;overflow:hidden;background:#141414}
+.scr{position:absolute;inset:0;padding:42px 16px 16px;opacity:0;transform:translateX(30px);animation:cyc 12s infinite}
+.scr:nth-child(2){animation-delay:4s}.scr:nth-child(3){animation-delay:8s}
+@keyframes cyc{0%{opacity:0;transform:translateX(30px)}6%,30%{opacity:1;transform:none}36%,100%{opacity:0;transform:translateX(-30px)}}
+.scr h4{font:700 20px "Cormorant Garamond",serif;color:#d4af37;letter-spacing:.1em;margin-bottom:10px}
+.mini{background:#1e1e1e;border-radius:16px;padding:12px;margin-bottom:10px;display:flex;gap:10px;align-items:center;font-size:11px}
+.mini i{font-style:normal;font-size:26px;width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#d4af3744,#0a0a0a);display:grid;place-items:center}
+.mini b{display:block;font-size:12px;font-weight:500}.mini span{color:#d4af37}
+.ban{height:120px;border-radius:18px;background:linear-gradient(120deg,#b59328,#f3e5ab,#d4af37);color:#0a0a0a;padding:16px;margin-bottom:12px;font:700 22px/1.1 "Cormorant Garamond",serif;position:relative;overflow:hidden}
+.ban:after{content:"";position:absolute;top:0;bottom:0;width:40px;background:#fff8;filter:blur(10px);transform:skewX(-20deg);animation:sweep 3s infinite}
+@keyframes sweep{from{left:-60px}to{left:120%}}
+.mq{overflow:hidden;border-block:1px solid #d4af3733;padding:18px 0;background:var(--bg2)}
+.mq div{display:flex;gap:60px;width:max-content;animation:mq 28s linear infinite;font:italic 500 28px "Cormorant Garamond",serif;color:var(--g)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.sec-t{text-align:center;margin-bottom:56px}.sec-t h2{font-size:clamp(34px,5vw,58px);margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;max-width:1100px;margin:auto}
+.f{background:var(--card);border:1px solid #d4af3722;border-radius:24px;padding:32px;transition:transform .4s,border-color .4s,box-shadow .4s}
+.f:hover{transform:translateY(-8px);border-color:var(--g);box-shadow:0 20px 50px #d4af3722}
+.f .ic{font-size:34px;display:inline-block;margin-bottom:14px;animation:float 4s ease-in-out infinite}
+.f h3{font-size:26px;margin-bottom:8px}.f p{color:var(--mut);font-size:14px}
+.cats{background:var(--bg2)}
+.prod{display:flex;gap:22px;overflow-x:auto;padding:10px 4px 30px;scroll-snap-type:x mandatory;max-width:1100px;margin:auto}
+.p{flex:0 0 240px;scroll-snap-align:start;background:var(--card);border-radius:24px;overflow:hidden;transition:transform .4s;border:1px solid #d4af3722}
+.p:hover{transform:translateY(-8px) rotate(-1deg)}
+.p .im{height:190px;display:grid;place-items:center;font-size:70px;background:radial-gradient(circle at 50% 40%,#d4af3744,transparent 70%),var(--bg);transition:transform .5s}
+.p:hover .im{transform:scale(1.1)}
+.p div.t{padding:18px}.p small{color:var(--g);letter-spacing:.2em;font-size:10px;text-transform:uppercase}
+.p h3{font-size:22px;margin:4px 0}.p b{font-weight:600}
+.stats{display:flex;justify-content:center;flex-wrap:wrap;gap:60px;text-align:center}
+.stats .n{font:700 64px "Cormorant Garamond",serif}.stats span{color:var(--mut);font-size:13px;letter-spacing:.15em;text-transform:uppercase}
+.steps{max-width:760px;margin:auto;border-left:1px solid #d4af3755;padding-left:34px}
+.st{position:relative;margin-bottom:38px}.st:before{content:attr(data-n);position:absolute;left:-58px;top:0;width:44px;height:44px;border-radius:50%;background:var(--bg);border:1px solid var(--g);color:var(--g);display:grid;place-items:center;font:700 20px "Cormorant Garamond",serif}
+.st h3{font-size:26px}.st p{color:var(--mut)}
+.cta{text-align:center;background:radial-gradient(ellipse at center,#d4af3730,transparent 65%),var(--bg2)}
+.cta h2{font-size:clamp(38px,6vw,76px);margin:12px 0 30px}
+footer{text-align:center;padding:34px 6vw;color:var(--mut);font-size:12px;letter-spacing:.1em}
+.rv{opacity:0;transform:translateY(40px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(max-width:820px){.hero{grid-template-columns:1fr;text-align:center;padding-top:110px}.hero p{margin-inline:auto}.phone{width:240px;height:500px}section{padding:70px 6vw}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.scr:first-child{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav><b class="gold">SHINE</b><a class="btn sm" href="#dl">Télécharger</a></nav>
+
+<section class="hero">
+<div class="glow"></div>
+<div class="rv"><div class="eyebrow">La boutique de luxe dans votre poche</div>
+<h1>L’éclat, <span class="gold serif">livré chez vous.</span></h1>
+<p>Parfums d’exception, mode raffinée et cosmétiques précieux. Découvrez SHINE BY CARELLE : une expérience premium, du premier regard à la livraison VIP express.</p>
+<a class="btn" href="#dl">Télécharger l’app</a></div>
+<div class="rv">
+<div class="phone"><div class="screens">
+<div class="scr"><h4>SHINE</h4><div class="ban">Vente VIP<br>SHINE2026 ✨</div><div class="mini"><i>🌸</i><div><b>Chanel N°5 Paris</b><span>Parfums</span></div></div><div class="mini"><i>👗</i><div><b>Robe d’Or Solitaire</b><span>Habits</span></div></div></div>
+<div class="scr"><h4>BOUTIQUE</h4><div class="mini"><i>💄</i><div><b>Rouge Dior Shine Cherry</b><span>Cosmétiques</span></div></div><div class="mini"><i>🧴</i><div><b>Sérum Précieux Or 24K</b><span>Cosmétiques</span></div></div><div class="mini"><i>🧥</i><div><b>Tailleur Satin de Soie</b><span>Habits</span></div></div></div>
+<div class="scr"><h4>PANIER</h4><div class="mini"><i>🌸</i><div><b>Coco Mademoiselle</b><span>Parfums</span></div></div><div class="mini"><i>🚚</i><div><b>Livraison VIP express</b><span>Express 2h</span></div></div><div class="ban" style="height:70px;font-size:16px;margin-top:14px">Passer la commande d’exception</div></div>
+</div></div></div>
+</section>
+
+<div class="mq"><div><span>Parfums</span><span>✦</span><span>Habits</span><span>✦</span><span>Cosmétiques</span><span>✦</span><span>Livraison VIP</span><span>✦</span><span>Parfums</span><span>✦</span><span>Habits</span><span>✦</span><span>Cosmétiques</span><span>✦</span><span>Livraison VIP</span><span>✦</span></div></div>
+
+<section>
+<div class="sec-t rv"><div class="eyebrow">Pourquoi SHINE</div><h2>Le luxe, <span class="gold">sans compromis</span></h2></div>
+<div class="grid">
+<div class="f rv"><div class="ic">💎</div><h3>Collections d’exception</h3><p>Parfums, robes, tailleurs et cosmétiques sélectionnés avec exigence.</p></div>
+<div class="f rv"><div class="ic">❤️</div><h3>Vos favoris en or</h3><p>Marquez vos coups de cœur et retrouvez-les à tout moment.</p></div>
+<div class="f rv"><div class="ic">💬</div><h3>Salon Conseil Carelle</h3><p>Une conseillère style &amp; prestige pour échanger et être guidée.</p></div>
+<div class="f rv"><div class="ic">📱</div><h3>Paiement Mobile Money</h3><p>Réglez simplement par Wave, Orange ou carte, en toute sécurité.</p></div>
+<div class="f rv"><div class="ic">🚚</div><h3>Livraison VIP express</h3><p>Suivez chaque commande : confirmée, en transit, livrée.</p></div>
+<div class="f rv"><div class="ic">🎁</div><h3>Offres VIP</h3><p>Codes promo exclusifs et ventes privées réservés aux membres.</p></div>
+</div></section>
+
+<section class="cats">
+<div class="sec-t rv"><div class="eyebrow">Aperçu de la boutique</div><h2>Des <span class="gold">trésors</span> à portée de doigt</h2></div>
+<div class="prod">
+<div class="p rv"><div class="im">🌸</div><div class="t"><small>Parfums</small><h3>Chanel N°5 Paris</h3></div></div>
+<div class="p rv"><div class="im">🖤</div><div class="t"><small>Parfums</small><h3>Dior Sauvage Extrême</h3></div></div>
+<div class="p rv"><div class="im">👗</div><div class="t"><small>Habits</small><h3>Robe d’Or Solitaire</h3></div></div>
+<div class="p rv"><div class="im">🧥</div><div class="t"><small>Habits</small><h3>Tailleur Satin de Soie Noir</h3></div></div>
+<div class="p rv"><div class="im">💄</div><div class="t"><small>Cosmétiques</small><h3>Rouge Dior Shine Cherry</h3></div></div>
+<div class="p rv"><div class="im">✨</div><div class="t"><small>Cosmétiques</small><h3>Sérum Précieux Or 24K</h3></div></div>
+</div></section>
+
+<section>
+<div class="stats rv">
+<div><div class="n gold" data-c="3">0</div><span>Univers de luxe</span></div>
+<div><div class="n gold" data-c="2">0</div><span>Heures en express</span></div>
+<div><div class="n gold" data-c="100" data-s="%">0</div><span>Paiement sécurisé</span></div>
+</div></section>
+
+<section class="cats">
+<div class="sec-t rv"><div class="eyebrow">Simple comme bonjour</div><h2>Commander en <span class="gold">3 gestes</span></h2></div>
+<div class="steps">
+<div class="st rv" data-n="1"><h3>Parcourez</h3><p>Cherchez un parfum, une robe, un rouge… et explorez les collections.</p></div>
+<div class="st rv" data-n="2"><h3>Choisissez</h3><p>Ajoutez au panier, appliquez votre code promo VIP.</p></div>
+<div class="st rv" data-n="3"><h3>Recevez</h3><p>Payez en Mobile Money et suivez votre livraison express.</p></div>
+</div></section>
+
+<section class="cta" id="dl">
+<div class="rv"><div class="eyebrow">Rejoignez le cercle</div><h2>Prête à <span class="gold">briller</span> ?</h2>
+<a class="btn" href="#dl">Télécharger SHINE BY CARELLE</a></div></section>
+
+<footer>© 2026 SHINE BY CARELLE · Boutique en ligne premium</footer>
+
+<script>
+(function(){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+var h=document.querySelector('.hero');
+for(var i=0;i<26;i++){var s=document.createElement('span');s.className='spark';s.style.left=Math.random()*100+'%';s.style.bottom=Math.random()*30+'%';s.style.animationDuration=(6+Math.random()*8)+'s';s.style.animationDelay=(-Math.random()*10)+'s';h.appendChild(s)}
+var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);var t=+e.target.dataset.c,sf=e.target.dataset.s||'',st=null;
+function f(ts){st=st||ts;var p=Math.min((ts-st)/1600,1);e.target.textContent=Math.round(t*(1-Math.pow(1-p,3)))+sf;if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)})},{threshold:.6});
+document.querySelectorAll('[data-c]').forEach(function(n){co.observe(n)});
+})();
+</script>
+</body>
+</html>
